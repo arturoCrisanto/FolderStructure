@@ -2,7 +2,7 @@
 
 1. Initialize a Project:
 
-- Create a folder named using your surname (e.g., Smith_API_Project).
+- Create a folder named using your `surname` (e.g., Smith_API_Project).
 - Initialize a Node.js project
 
 ```bash
@@ -51,14 +51,14 @@ Smith_API_Project/
 ## Step-by-Step Implementation
 
 1. Create the .env File
-   In the .env file, set the server's port:
+   In the `.env` file, set the server's port:
 
 ```bash
 PORT=3000
 ```
 
 2. Create the .gitignore File
-   In the .gitignore file, exclude sensitive files:
+   In the `.gitignore` file, exclude sensitive files:
 
 ```bash
 node_modules
@@ -66,7 +66,7 @@ node_modules
 ```
 
 3. Create the Model
-   The model handles data. In models/itemModel.js:
+   The model handles data. In `models/itemModel.js`:
 
 ```javascript
 // models/itemModel.js
@@ -80,7 +80,7 @@ module.exports = items;
 ```
 
 4. Create the Controller
-   The controller contains the logic for each endpoint. In controllers/itemController.js:
+   The controller contains the logic for each endpoint. In `controllers/itemController.js`:
 
 ```javascript
 // controllers/itemController.js
@@ -181,7 +181,7 @@ module.exports = {
 ```
 
 5. Create the Routes
-   The routes define the endpoints and link them to the controller. In routes/itemRoutes.js:
+   The routes define the endpoints and link them to the controller. In `routes/itemRoutes.js`:
 
 ```javascript
 // routes/itemRoutes.js
@@ -206,7 +206,7 @@ module.exports = router;
 ```
 
 6. Connect Everything in server.js
-   In the server.js file:
+   In the `server.js` file:
 
 ```javascript
 // index.js
@@ -228,13 +228,13 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 # Run and Test
 
-1. Start the server using nodemon:
+1. Start the server using `nodemon`:
 
 ```bash
 npm run dev
 ```
 
-2. Test the endpoints using Postman or curl:
+2. Test the endpoints using `Postman`:
 
 GET `/items` - Retrieve all items
 GET `/items/:id` - Retrieve a specific item
